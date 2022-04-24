@@ -1,1 +1,1 @@
-# swallow-form
+# swallow-editor
