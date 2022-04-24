@@ -1,12 +1,15 @@
 {
   "name": "@3scarecrow/swallow-form",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "main": "dist/swallow-form.umd.min.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "rimraf dist && npm run build:lib",
+    "build:lib": "vue-cli-service build --target lib --name swallow-form src/index.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
