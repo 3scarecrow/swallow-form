@@ -87,10 +87,31 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "00c5":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/form.css");
+
+/***/ }),
+
 /***/ "04f7":
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/esm/defineProperty");
+
+/***/ }),
+
+/***/ "0de2":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/select");
+
+/***/ }),
+
+/***/ "0fe2":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/select.css");
 
 /***/ }),
 
@@ -129,10 +150,17 @@ module.exports = require("core-js/modules/es.object.keys");
 
 /***/ }),
 
-/***/ "2691":
+/***/ "354b":
 /***/ (function(module, exports) {
 
-module.exports = require("element-ui/lib/theme-chalk/index.css");
+module.exports = require("element-ui/lib/form");
+
+/***/ }),
+
+/***/ "43c2":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/input-number");
 
 /***/ }),
 
@@ -171,13 +199,6 @@ module.exports = require("@vue/babel-helper-vue-jsx-merge-props");
 
 /***/ }),
 
-/***/ "5f72":
-/***/ (function(module, exports) {
-
-module.exports = require("element-ui");
-
-/***/ }),
-
 /***/ "5fef":
 /***/ (function(module, exports) {
 
@@ -206,6 +227,41 @@ module.exports = require("core-js/modules/es.object.get-own-property-descriptor"
 
 /***/ }),
 
+/***/ "6e25":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/date-picker");
+
+/***/ }),
+
+/***/ "6ea3":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/row");
+
+/***/ }),
+
+/***/ "703d":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/col.css");
+
+/***/ }),
+
+/***/ "80c4":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/option.css");
+
+/***/ }),
+
+/***/ "8495":
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/modules/es.promise");
+
+/***/ }),
+
 /***/ "850c":
 /***/ (function(module, exports) {
 
@@ -217,6 +273,13 @@ module.exports = require("core-js/modules/es.object.to-string");
 /***/ (function(module, exports) {
 
 module.exports = require("vue");
+
+/***/ }),
+
+/***/ "8c84":
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/modules/es.array.iterator");
 
 /***/ }),
 
@@ -234,6 +297,13 @@ module.exports = require("core-js/modules/es.map");
 
 /***/ }),
 
+/***/ "9a25":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/base.css");
+
+/***/ }),
+
 /***/ "9bb0":
 /***/ (function(module, exports) {
 
@@ -241,10 +311,38 @@ module.exports = require("@soda/get-current-script");
 
 /***/ }),
 
+/***/ "a497":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/col");
+
+/***/ }),
+
+/***/ "a9f8":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/input.css");
+
+/***/ }),
+
 /***/ "ab7e":
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/modules/es.array.includes");
+
+/***/ }),
+
+/***/ "b29c":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/form-item.css");
+
+/***/ }),
+
+/***/ "b917":
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/modules/es.object.assign");
 
 /***/ }),
 
@@ -262,6 +360,20 @@ module.exports = require("core-js/modules/web.dom-collections.for-each");
 
 /***/ }),
 
+/***/ "c11a":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/option");
+
+/***/ }),
+
+/***/ "cebf":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/input-number.css");
+
+/***/ }),
+
 /***/ "dc05":
 /***/ (function(module, exports) {
 
@@ -269,10 +381,38 @@ module.exports = require("core-js/modules/es.array.last-index-of");
 
 /***/ }),
 
+/***/ "e67a":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/input");
+
+/***/ }),
+
+/***/ "e8f3":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/date-picker.css");
+
+/***/ }),
+
 /***/ "f705":
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/modules/es.array.map");
+
+/***/ }),
+
+/***/ "f787":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/form-item");
+
+/***/ }),
+
+/***/ "f96d":
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/modules/es.promise.finally");
 
 /***/ }),
 
@@ -285,7 +425,9 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "SwallowForm", function() { return /* reexport */ swallow_form; });
-__webpack_require__.d(__webpack_exports__, "register", function() { return /* reexport */ register; });
+__webpack_require__.d(__webpack_exports__, "add", function() { return /* reexport */ swallow_formvue_type_script_lang_js_add; });
+__webpack_require__.d(__webpack_exports__, "get", function() { return /* reexport */ swallow_formvue_type_script_lang_js_get; });
+__webpack_require__.d(__webpack_exports__, "has", function() { return /* reexport */ swallow_formvue_type_script_lang_js_has; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -314,19 +456,119 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external "core-js/modules/es.function.name"
 var es_function_name_ = __webpack_require__("bcd8");
 
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/form.css"
+var form_css_ = __webpack_require__("00c5");
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/base.css"
+var base_css_ = __webpack_require__("9a25");
+
+// EXTERNAL MODULE: external "element-ui/lib/form"
+var form_ = __webpack_require__("354b");
+var form_default = /*#__PURE__*/__webpack_require__.n(form_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/form-item.css"
+var form_item_css_ = __webpack_require__("b29c");
+
+// EXTERNAL MODULE: external "element-ui/lib/form-item"
+var form_item_ = __webpack_require__("f787");
+var form_item_default = /*#__PURE__*/__webpack_require__.n(form_item_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/row.css"
+var row_css_ = __webpack_require__("fd9c");
+
+// EXTERNAL MODULE: external "element-ui/lib/row"
+var row_ = __webpack_require__("6ea3");
+var row_default = /*#__PURE__*/__webpack_require__.n(row_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/col.css"
+var col_css_ = __webpack_require__("703d");
+
+// EXTERNAL MODULE: external "element-ui/lib/col"
+var col_ = __webpack_require__("a497");
+var col_default = /*#__PURE__*/__webpack_require__.n(col_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/input-number.css"
+var input_number_css_ = __webpack_require__("cebf");
+
+// EXTERNAL MODULE: external "element-ui/lib/input-number"
+var input_number_ = __webpack_require__("43c2");
+var input_number_default = /*#__PURE__*/__webpack_require__.n(input_number_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/date-picker.css"
+var date_picker_css_ = __webpack_require__("e8f3");
+
+// EXTERNAL MODULE: external "element-ui/lib/date-picker"
+var date_picker_ = __webpack_require__("6e25");
+var date_picker_default = /*#__PURE__*/__webpack_require__.n(date_picker_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/option.css"
+var option_css_ = __webpack_require__("80c4");
+
+// EXTERNAL MODULE: external "element-ui/lib/option"
+var option_ = __webpack_require__("c11a");
+var option_default = /*#__PURE__*/__webpack_require__.n(option_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/select.css"
+var select_css_ = __webpack_require__("0fe2");
+
+// EXTERNAL MODULE: external "element-ui/lib/select"
+var select_ = __webpack_require__("0de2");
+var select_default = /*#__PURE__*/__webpack_require__.n(select_);
+
+// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/input.css"
+var input_css_ = __webpack_require__("a9f8");
+
+// EXTERNAL MODULE: external "element-ui/lib/input"
+var input_ = __webpack_require__("e67a");
+var input_default = /*#__PURE__*/__webpack_require__.n(input_);
+
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__("8bbf");
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
-// EXTERNAL MODULE: external {"root":"ELEMENT","commonjs":"element-ui","commonjs2":"element-ui","amd":"element-ui"}
-var external_root_ELEMENT_commonjs_element_ui_commonjs2_element_ui_amd_element_ui_ = __webpack_require__("5f72");
-var external_root_ELEMENT_commonjs_element_ui_commonjs2_element_ui_amd_element_ui_default = /*#__PURE__*/__webpack_require__.n(external_root_ELEMENT_commonjs_element_ui_commonjs2_element_ui_amd_element_ui_);
+// CONCATENATED MODULE: ./src/importElementUI.js
 
-// EXTERNAL MODULE: external "element-ui/lib/theme-chalk/index.css"
-var index_css_ = __webpack_require__("2691");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+external_vue_default.a.use(input_default.a);
+external_vue_default.a.use(select_default.a);
+external_vue_default.a.use(option_default.a);
+external_vue_default.a.use(date_picker_default.a);
+external_vue_default.a.use(input_number_default.a);
+external_vue_default.a.use(col_default.a);
+external_vue_default.a.use(row_default.a);
+external_vue_default.a.use(form_item_default.a);
+external_vue_default.a.use(form_default.a);
 // EXTERNAL MODULE: external "core-js/modules/es.array.map"
 var es_array_map_ = __webpack_require__("f705");
+
+// EXTERNAL MODULE: external "core-js/modules/es.object.assign"
+var es_object_assign_ = __webpack_require__("b917");
 
 // EXTERNAL MODULE: external "@vue/babel-helper-vue-jsx-merge-props"
 var babel_helper_vue_jsx_merge_props_ = __webpack_require__("5a5e");
@@ -400,60 +642,14 @@ function _objectSpread2(target) {
 
   return target;
 }
-// EXTERNAL MODULE: external "core-js/modules/es.array.slice"
-var es_array_slice_ = __webpack_require__("6579");
+// EXTERNAL MODULE: external "core-js/modules/es.array.iterator"
+var es_array_iterator_ = __webpack_require__("8c84");
+
+// EXTERNAL MODULE: external "core-js/modules/es.map"
+var es_map_ = __webpack_require__("9861");
 
 // EXTERNAL MODULE: external "core-js/modules/es.object.to-string"
 var es_object_to_string_ = __webpack_require__("850c");
-
-// EXTERNAL MODULE: external "core-js/modules/es.regexp.to-string"
-var es_regexp_to_string_ = __webpack_require__("5fef");
-
-// CONCATENATED MODULE: ./src/utils/types.js
-
-
-
-
-
-var _toString = function _toString(val) {
-  return Object.prototype.toString.call(val);
-};
-
-var isType = function isType(val, type) {
-  return _toString(val).slice(8, -1) === type;
-};
-
-function isDef(val) {
-  return val !== undefined && val !== null;
-}
-function isUndef(val) {
-  return val === undefined || val === null;
-}
-function isString(val) {
-  return isType(val, 'String');
-}
-function isPlainObject(val) {
-  return isType(val, 'Object');
-}
-function isFunction(val) {
-  return isType(val, 'Function');
-}
-function isArray(val) {
-  return isType(val, 'Array');
-}
-function isNumber(val) {
-  return isType(val, 'Number');
-}
-function isPromise(val) {
-  return isDef(val) && typeof val.then === 'function' && typeof val.catch === 'function';
-}
-function isVNode(node) {
-  var vm = new external_vue_default.a();
-  var emptyVNode = vm.$createElement();
-  return node instanceof emptyVNode.constructor;
-}
-// EXTERNAL MODULE: external "core-js/modules/es.map"
-var es_map_ = __webpack_require__("9861");
 
 // EXTERNAL MODULE: external "core-js/modules/es.string.iterator"
 var es_string_iterator_ = __webpack_require__("907b");
@@ -507,11 +703,63 @@ var es_array_includes_ = __webpack_require__("ab7e");
 // EXTERNAL MODULE: external "core-js/modules/es.array.last-index-of"
 var es_array_last_index_of_ = __webpack_require__("dc05");
 
+// EXTERNAL MODULE: external "core-js/modules/es.array.slice"
+var es_array_slice_ = __webpack_require__("6579");
+
 // EXTERNAL MODULE: external "core-js/modules/es.string.includes"
 var es_string_includes_ = __webpack_require__("fd48");
 
+// EXTERNAL MODULE: external "core-js/modules/es.regexp.to-string"
+var es_regexp_to_string_ = __webpack_require__("5fef");
+
+// CONCATENATED MODULE: ./src/utils/types.js
+
+
+
+
+
+var _toString = function _toString(val) {
+  return Object.prototype.toString.call(val);
+};
+
+var isType = function isType(val, type) {
+  return _toString(val).slice(8, -1) === type;
+};
+
+function isDef(val) {
+  return val !== undefined && val !== null;
+}
+function isUndef(val) {
+  return val === undefined || val === null;
+}
+function isString(val) {
+  return isType(val, 'String');
+}
+function isPlainObject(val) {
+  return isType(val, 'Object');
+}
+function isFunction(val) {
+  return isType(val, 'Function');
+}
+function isArray(val) {
+  return isType(val, 'Array');
+}
+function isNumber(val) {
+  return isType(val, 'Number');
+}
+function isPromise(val) {
+  return isDef(val) && typeof val.then === 'function' && typeof val.catch === 'function';
+}
+function isVNode(node) {
+  var vm = new external_vue_default.a();
+  var emptyVNode = vm.$createElement();
+  return node instanceof emptyVNode.constructor;
+}
 // EXTERNAL MODULE: external "core-js/modules/es.array.reduce"
 var es_array_reduce_ = __webpack_require__("169d");
+
+// EXTERNAL MODULE: external "core-js/modules/es.promise"
+var es_promise_ = __webpack_require__("8495");
 
 // EXTERNAL MODULE: external "core-js/modules/es.regexp.exec"
 var es_regexp_exec_ = __webpack_require__("51f7");
@@ -520,6 +768,8 @@ var es_regexp_exec_ = __webpack_require__("51f7");
 var es_string_split_ = __webpack_require__("46fa");
 
 // CONCATENATED MODULE: ./src/utils/helpers.js
+
+
 
 
 
@@ -605,6 +855,7 @@ var error = function error(name, msg) {
 
 
 
+
 /* harmony default export */ var field_mixin = ({
   props: {
     field: {
@@ -629,7 +880,7 @@ var error = function error(name, msg) {
             prop = _this$field.prop;
 
         if (isUndef(prop)) {
-          return error('swallow-form', "el-".concat(type, " \u7EC4\u4EF6\u66F4\u65B0\u503C\u7F3A\u5C11 fieldKey \u6216 prop \u5C5E\u6027"));
+          return error('swallow-form', "el-".concat(type, " \u7EC4\u4EF6\u66F4\u65B0\u503C\u7F3A\u5C11 prop \u5C5E\u6027"));
         }
 
         if (!prop.includes('.')) {
@@ -676,10 +927,11 @@ var error = function error(name, msg) {
       var _this$field3 = this.field,
           disabled = _this$field3.disabled,
           prop = _this$field3.prop,
-          props = _this$field3.props,
           on = _this$field3.on,
           style = _this$field3.style,
-          className = _this$field3.class;
+          className = _this$field3.class,
+          _this$field3$props = _this$field3.props,
+          props = _this$field3$props === void 0 ? {} : _this$field3$props;
 
       if (isDef(disabled)) {
         var args = {
@@ -850,7 +1102,12 @@ var input_component = normalizeComponent(
 )
 
 /* harmony default export */ var input = (input_component.exports);
+// EXTERNAL MODULE: external "core-js/modules/es.promise.finally"
+var es_promise_finally_ = __webpack_require__("f96d");
+
 // CONCATENATED MODULE: ./src/mixins/option-mixin.js
+
+
 
 
 
@@ -1093,9 +1350,6 @@ var text_component = normalizeComponent(
       default: function _default() {
         return {};
       }
-    },
-    renderFields: {
-      type: Function
     }
   },
   computed: {
@@ -1170,7 +1424,7 @@ var col_component = normalizeComponent(
 )
 
 /* harmony default export */ var col = (col_component.exports);
-// CONCATENATED MODULE: ./src/components/fields/index.js
+// CONCATENATED MODULE: ./src/components/fields/store.js
 
 
 
@@ -1187,7 +1441,8 @@ var col_component = normalizeComponent(
 
 
 
-var fields_Store = /*#__PURE__*/function () {
+
+var store_Store = /*#__PURE__*/function () {
   function Store() {
     _classCallCheck(this, Store);
 
@@ -1206,7 +1461,7 @@ var fields_Store = /*#__PURE__*/function () {
     key: "add",
     value: function add(name, component) {
       if (this.componentMap.has(name)) {
-        return error("".concat(name, " \u7EC4\u4EF6\u540D\u79F0\u5DF2\u88AB\u6CE8\u518C\uFF0C\u8BF7\u6CE8\u518C\u65B0\u7684\u7EC4\u4EF6\u540D\u79F0"));
+        return error(name, "".concat(name, " \u7EC4\u4EF6\u540D\u79F0\u5DF2\u88AB\u6CE8\u518C\uFF0C\u8BF7\u6CE8\u518C\u65B0\u7684\u7EC4\u4EF6\u540D\u79F0"));
       }
 
       this.componentMap.set(name, component);
@@ -1226,21 +1481,28 @@ var fields_Store = /*#__PURE__*/function () {
   return Store;
 }();
 
-var ComponentStore = new fields_Store();
-var register = function register() {
-  return ComponentStore.add.apply(ComponentStore, arguments);
-};
-var has = function has() {
-  return ComponentStore.has.apply(ComponentStore, arguments);
-};
-var fields_get = function get() {
-  return ComponentStore.get.apply(ComponentStore, arguments);
-};
+/* harmony default export */ var store = (new store_Store());
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/swallow-form.vue?vue&type=script&lang=js&
 
 
 
 
+
+
+
+
+
+var swallow_formvue_type_script_lang_js_has = function has() {
+  return store.has.apply(store, arguments);
+};
+
+var swallow_formvue_type_script_lang_js_get = function get() {
+  return store.get.apply(store, arguments);
+};
+
+var swallow_formvue_type_script_lang_js_add = function add() {
+  return store.add.apply(store, arguments);
+};
 
 
 /* harmony default export */ var swallow_formvue_type_script_lang_js_ = ({
@@ -1356,14 +1618,17 @@ var fields_get = function get() {
         });
       }
 
-      if (has(type)) {
-        var PresetComponent = fields_get(type);
-        Content = h(PresetComponent, {
-          "attrs": {
-            "field": field,
-            "field-model": model
-          }
-        }, [Children]);
+      if (swallow_formvue_type_script_lang_js_has(type)) {
+        var PresetComponent = swallow_formvue_type_script_lang_js_get(type);
+
+        var vnodeData = _objectSpread2(_objectSpread2({}, pick(field, ['on', 'slots'])), {}, {
+          props: Object.assign({}, field.props, {
+            field: field,
+            fieldModel: model
+          })
+        });
+
+        Content = h(PresetComponent, babel_helper_vue_jsx_merge_props_default()([{}, vnodeData]), [Children]);
       }
 
       return Content || Children;
@@ -1422,12 +1687,12 @@ var swallow_form_component = normalizeComponent(
 /* harmony default export */ var swallow_form = (swallow_form_component.exports);
 // CONCATENATED MODULE: ./src/index.js
 
+// import Vue from 'vue'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 
-
-
-
-
-external_vue_default.a.use(external_root_ELEMENT_commonjs_element_ui_commonjs2_element_ui_amd_element_ui_default.a);
+ // import { register } from '@/components/fields'
+// Vue.use(ElementUI)
 
 function bindInstall(name, component) {
   var install = function install(vue) {
@@ -1454,6 +1719,13 @@ function bindInstall(name, component) {
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/modules/es.string.includes");
+
+/***/ }),
+
+/***/ "fd9c":
+/***/ (function(module, exports) {
+
+module.exports = require("element-ui/lib/theme-chalk/row.css");
 
 /***/ })
 
