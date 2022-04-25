@@ -1578,6 +1578,7 @@ var swallow_formvue_type_script_lang_js_add = function add() {
         renderField: this.renderField
       };
       var field = this.normalizeField(_field);
+      if (isVNode(field)) return field;
       if (isFunction(field)) return field(renderArgs);
       var visible = field.visible,
           prop = field.prop;
