@@ -1,6 +1,6 @@
 <script>
 import Store from './fields/store'
-import { isArray, isNumber, isString, isFunction } from '@/utils/types'
+import { isArray, isNumber, isString, isFunction, isVNode } from '@/utils/types'
 import { pick, normalizeAttrs, ensureFunction } from '@/utils/helpers'
 
 const has = (...arg) => Store.has(...arg)
@@ -68,6 +68,7 @@ export default {
       const { model } = this.$attrs
       const renderArgs = { model, renderField: this.renderField }
       const field = this.normalizeField(_field)
+      if (isVNode(field)) return field
       if (isFunction(field)) return field(renderArgs)
 
       const { visible, prop } = field
