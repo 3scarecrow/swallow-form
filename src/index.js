@@ -1,10 +1,11 @@
-import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import SwallowForm from '@/components/swallow-form'
-import { register } from '@/components/fields'
+// import Vue from 'vue'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
+import './importElementUI'
+import SwallowForm, { add, get, has } from '@/components/swallow-form'
+// import { register } from '@/components/fields'
 
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 
 function bindInstall(name, component) {
   const install = (vue) => vue.component(name, component)
@@ -17,4 +18,4 @@ function bindInstall(name, component) {
 }
 
 export default bindInstall(SwallowForm.name, SwallowForm)
-export { SwallowForm, register }
+export { SwallowForm, add, get, has }

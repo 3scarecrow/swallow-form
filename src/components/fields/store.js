@@ -22,7 +22,7 @@ class Store {
 
   add(name, component) {
     if (this.componentMap.has(name)) {
-      return error(`${name} 组件名称已被注册，请注册新的组件名称`)
+      return error(name, `${name} 组件名称已被注册，请注册新的组件名称`)
     }
     this.componentMap.set(name, component)
   }
@@ -36,7 +36,4 @@ class Store {
   }
 }
 
-const ComponentStore = new Store()
-export const register = (...arg) => ComponentStore.add(...arg)
-export const has = (...arg) => ComponentStore.has(...arg)
-export const get = (...arg) => ComponentStore.get(...arg)
+export default new Store()

@@ -20,10 +20,7 @@ export default {
         const { fieldModel } = this
         const { type, prop } = this.field
         if (isUndef(prop)) {
-          return error(
-            'swallow-form',
-            `el-${type} 组件更新值缺少 fieldKey 或 prop 属性`
-          )
+          return error('swallow-form', `el-${type} 组件更新值缺少 prop 属性`)
         }
         if (!prop.includes('.')) {
           this.setValue(fieldModel, prop, val)
@@ -67,11 +64,11 @@ export default {
       const {
         disabled,
         prop,
-        props,
         on,
         // slots,
         style,
-        class: className
+        class: className,
+        props = {}
       } = this.field
       if (isDef(disabled)) {
         const args = { model: fieldModel, prop }

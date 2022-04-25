@@ -1,8 +1,13 @@
 <script>
+import Store from './fields/store'
 import { isArray, isNumber, isString, isFunction } from '@/utils/types'
-import { has, get } from './fields'
-import { normalizeAttrs, ensureFunction } from '@/utils/helpers'
+import { pick, normalizeAttrs, ensureFunction } from '@/utils/helpers'
 
+const has = (...arg) => Store.has(...arg)
+const get = (...arg) => Store.get(...arg)
+const add = (...arg) => Store.add(...arg)
+
+export { add, get, has }
 export default {
   name: 'SwallowForm',
 
@@ -94,11 +99,14 @@ export default {
 
       if (has(type)) {
         const PresetComponent = get(type)
-        Content = (
-          <PresetComponent field={field} field-model={model}>
-            {Children}
-          </PresetComponent>
-        )
+        const vnodeData = {
+          ...pick(field, ['on', 'slots']),
+          props: Object.assign({}, field.props, {
+            field: field,
+            fieldModel: model
+          })
+        }
+        Content = <PresetComponent {...vnodeData}>{Children}</PresetComponent>
       }
 
       return Content || Children

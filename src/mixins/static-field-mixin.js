@@ -5,9 +5,6 @@ export default {
     field: {
       type: Object,
       default: () => ({})
-    },
-    renderFields: {
-      type: Function
     }
   },
 

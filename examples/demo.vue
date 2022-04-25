@@ -7,31 +7,43 @@
 </template>
 
 <script>
-import { SwallowForm, register } from '../src'
+import { SwallowForm, add } from '../src'
 
 const abc = {
   name: 'abc',
 
-  props: ['field', 'fieldModel'],
+  props: ['count', 'field', 'fieldModel'],
 
   data() {
     return {
-      count: 0
+      vcount: this.count
     }
   },
 
   render() {
-    const { prop } = this.field
+    // const { prop } = this.field
     return (
-      <input
-        value={this.fieldModel[prop]}
-        on-change={() => this.$set(this.fieldModel, prop, 12)}
-      ></input>
+      <div>
+        <button
+          on-click={() => {
+            this.vcount++
+            this.$emit('click', this.vcount)
+          }}
+        >
+          {this.vcount}
+        </button>
+        {
+          // <input
+          //   value={this.fieldModel[prop]}
+          //   on-change={() => this.$set(this.fieldModel, prop, 12)}
+          // ></input>
+        }
+      </div>
     )
   }
 }
 
-register('abc', abc)
+add('abc', abc)
 
 export default {
   name: 'App',
@@ -87,28 +99,15 @@ export default {
             layout: { span: 8 }
           },
           {
-            type: 'input',
+            type: 'abc',
             prop: 'xxx',
-            item: { label: '输入框' },
-            layout: { span: 4 }
-          },
-          {
-            type: 'input',
-            prop: 'xxx',
-            item: { label: '输入框' },
-            layout: { span: 4 }
+            props: { count: 12 },
+            item: { label: '按钮' },
+            layout: { span: 8 },
+            on: {
+              click: (val) => console.log(val)
+            }
           }
-          // {
-          //   type: 'abc',
-          //   prop: 'xxx',
-          //   item: { label: '输入框' },
-          //   layout: { span: 4 },
-          // },
-          // {
-          //   type: 'abc',
-          //   prop: 'abc',
-          //   layout: { span: 4 },
-          // },
         ]
       ]
     }
