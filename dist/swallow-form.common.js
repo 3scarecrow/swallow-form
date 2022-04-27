@@ -248,6 +248,13 @@ module.exports = require("element-ui/lib/theme-chalk/col.css");
 
 /***/ }),
 
+/***/ "79d0":
+/***/ (function(module, exports) {
+
+module.exports = require("regenerator-runtime/runtime");
+
+/***/ }),
+
 /***/ "80c4":
 /***/ (function(module, exports) {
 
@@ -1105,7 +1112,51 @@ var input_component = normalizeComponent(
 // EXTERNAL MODULE: external "core-js/modules/es.promise.finally"
 var es_promise_finally_ = __webpack_require__("f96d");
 
+// EXTERNAL MODULE: external "regenerator-runtime/runtime"
+var runtime_ = __webpack_require__("79d0");
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+
+  if (info.done) {
+    resolve(value);
+  } else {
+    Promise.resolve(value).then(_next, _throw);
+  }
+}
+
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+        args = arguments;
+    return new Promise(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+
+      _next(undefined);
+    });
+  };
+}
 // CONCATENATED MODULE: ./src/mixins/option-mixin.js
+
+
 
 
 
@@ -1117,31 +1168,51 @@ var es_promise_finally_ = __webpack_require__("f96d");
       internalOptions: []
     };
   },
-  watch: {
-    'field.options': {
-      immediate: true,
-      handler: function handler() {
-        var _this = this;
+  mounted: function mounted() {
+    var _this = this;
 
-        var setOptions = function setOptions(options) {
-          if (isArray(options)) {
-            _this.internalOptions = options;
+    return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+      var options;
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              options = _this.field.options;
+
+              if (options) {
+                _this.$watch(options, _this.parseOptions, {
+                  immediate: true
+                });
+              }
+
+            case 2:
+            case "end":
+              return _context.stop();
           }
-        };
-
-        var options = this.field.options;
-        var optionsPromise = this.resolveOptions(options, setOptions);
-
-        if (optionsPromise) {
-          this.loading = true;
-          optionsPromise.then(setOptions).finally(function () {
-            _this.loading = false;
-          });
         }
-      }
-    }
+      }, _callee);
+    }))();
   },
   methods: {
+    parseOptions: function parseOptions() {
+      var _this2 = this;
+
+      var setOptions = function setOptions(options) {
+        if (isArray(options)) {
+          _this2.internalOptions = options;
+        }
+      };
+
+      var options = this.field.options;
+      var optionsPromise = this.resolveOptions(options, setOptions);
+
+      if (optionsPromise) {
+        this.loading = true;
+        optionsPromise.then(setOptions).finally(function () {
+          _this2.loading = false;
+        });
+      }
+    },
     resolveOptions: function resolveOptions(options, done) {
       var optionsPromise = null;
 
