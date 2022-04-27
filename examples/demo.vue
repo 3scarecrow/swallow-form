@@ -9,8 +9,8 @@
 <script>
 import { SwallowForm, add } from '../src'
 
-const abc = {
-  name: 'abc',
+const clock = {
+  name: 'Clock',
 
   props: ['count', 'field', 'fieldModel'],
 
@@ -21,7 +21,6 @@ const abc = {
   },
 
   render() {
-    // const { prop } = this.field
     return (
       <div>
         <button
@@ -32,18 +31,12 @@ const abc = {
         >
           {this.vcount}
         </button>
-        {
-          // <input
-          //   value={this.fieldModel[prop]}
-          //   on-change={() => this.$set(this.fieldModel, prop, 12)}
-          // ></input>
-        }
       </div>
     )
   }
 }
 
-add('abc', abc)
+add('clock', clock)
 
 export default {
   name: 'App',
@@ -55,6 +48,7 @@ export default {
   data() {
     return {
       formData: {},
+      options: [],
       fields: [
         {
           type: 'row',
@@ -70,10 +64,17 @@ export default {
               prop: 'yyy',
               item: { label: '选择框' },
               layout: { span: 8 },
-              options: [
-                { label: '1', value: 1 },
-                { label: '2', value: 2 }
-              ]
+              // options: () => this.options,
+              options: () => {
+                return new Promise((resolve) => {
+                  setTimeout(() => {
+                    resolve([
+                      { label: '1', value: 1 },
+                      { label: '2', value: 2 }
+                    ])
+                  }, 5000)
+                })
+              }
             },
             ({ model, renderField }) => {
               return renderField({
@@ -99,14 +100,12 @@ export default {
             layout: { span: 8 }
           },
           {
-            type: 'abc',
+            type: 'clock',
             prop: 'xxx',
             props: { count: 12 },
             item: { label: '按钮' },
             layout: { span: 8 },
-            on: {
-              click: (val) => console.log(val)
-            }
+            on: { click: (val) => console.log(val) }
           }
         ]
       ]
